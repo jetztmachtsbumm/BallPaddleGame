@@ -97,8 +97,8 @@ public class Objective : MonoBehaviour
 
         gameObject.SetActive(true);
         LoadObjective();
-        Instantiate(respawnSoundObject);
-        Destroy(respawnSoundObject, 2);
+        GameObject soundObject = Instantiate(respawnSoundObject);
+        Destroy(soundObject, 2);
     }
 
 }
